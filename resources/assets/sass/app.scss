@@ -1,0 +1,11 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@mixin few-properties {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+article {
+	@include few-properties;
+}

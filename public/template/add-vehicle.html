@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://clapat.ro/themes/automarket/orange/add-vehicle.html# -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Automarket - Add Vehicle</title>
+	<meta name="description" content="Automarket">
+
+	<link rel="stylesheet" href="http://clapat.ro/themes/automarket/orange/css/main.css">
+	<link rel="stylesheet" href="http://clapat.ro/themes/automarket/orange/css/uniform.default.css">
+	<link rel="stylesheet" href="http://clapat.ro/themes/automarket/orange/css/prettyPhoto.css">
+	<script src="./add-vehicle_files/modernizr-2.6.2.min.js"></script>
+	<script src="./add-vehicle_files/jquery-1.8.2.min.js"></script>
+	<script src="./add-vehicle_files/selectivizr.js"></script>
+	<script src="./add-vehicle_files/PIE.js"></script>
+	<script src="./add-vehicle_files/jquery.placeholder.min.js"></script>
+	<script src="./add-vehicle_files/jquery.uniform.min.js"></script>
+	<script src="./add-vehicle_files/jquery.flexslider-min.js"></script>
+	<script src="./add-vehicle_files/jquery.carouFredSel-6.1.0-packed.js"></script>
+	<script src="./add-vehicle_files/js"></script><script src="./add-vehicle_files/main.js"></script>
+	<script src="./add-vehicle_files/jquery.prettyPhoto.js"></script>
+	<script src="./add-vehicle_files/jquery.countdown.js"></script>
+	
+	<script src="./add-vehicle_files/plugins.js"></script>
+	<script src="./add-vehicle_files/main(1).js"></script>
+<script type="text/javascript" charset="UTF-8" src="./add-vehicle_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./add-vehicle_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./add-vehicle_files/stats.js"></script></head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<header>
+	<div class="content-holder">
+		<div class="layer-one">
+			<div class="page-titles">
+				<h1><a href="http://clapat.ro/themes/automarket/orange/index.html">Automarket</a></h1>
+				<p class="sub-title">This is a title</p>
+			</div>
+				
+			<div class="dealer-login">
+				<a href="http://clapat.ro/themes/automarket/orange/dealer-details.html" class="dealer-name">Dealer Name</a>
+				<a href="./add-vehicle_files/add-vehicle.html" class="sign-out">Sign Out</a>
+			</div>
+				
+			<div class="header-buttons">
+				<a href="http://clapat.ro/themes/automarket/orange/add-vehicle.html" class="add-an-offer rounded-link-box"><span class="box-content"><strong class="plus-sign">+</strong>&nbsp;Add An Offer</span></a>
+				<div class="pages-top rounded-link-box">
+					<a href="./add-vehicle_files/add-vehicle.html" class="box-content">Pages</a>
+					<ul>
+						
+                        <li><a href="http://clapat.ro/themes/automarket/orange/index.html">Home page</a></li>
+                        
+                        <li><a href="http://clapat.ro/themes/automarket/orange/add-vehicle.html">Add an offer</a></li>
+                        
+                        <li><a href="http://clapat.ro/themes/automarket/orange/log-in.html">Log in page</a></li>
+                        
+                        <li class="hasSubmenu"><a href="http://clapat.ro/themes/automarket/orange/car-list.html">Car list</a>
+							<ul>
+								<li><a href="http://clapat.ro/themes/automarket/orange/car-details.html">Car details</a></li><li>														
+							</li></ul>
+						</li>
+						
+                        <li class="hasSubmenu"><a href="http://clapat.ro/themes/automarket/orange/blog-overview.html">Blog</a>
+							<ul>
+								<li><a href="http://clapat.ro/themes/automarket/orange/blog-post.html">Blog post</a></li><li>														
+							</li></ul>
+						</li>
+						<li class="hasSubmenu"><a href="http://clapat.ro/themes/automarket/orange/dealer-list.html">Dealer list</a>
+                        <ul>
+								<li><a href="http://clapat.ro/themes/automarket/orange/dealer-details.html">Dealer details</a></li><li>														
+							</li></ul>
+						</li>
+                        
+						<li><a href="http://clapat.ro/themes/automarket/orange/insurance.html">Insurance</a></li>
+						
+                        <li><a href="http://clapat.ro/themes/automarket/orange/under-construction.html">Under construction</a></li>
+                        
+                        <li><a href="http://clapat.ro/themes/automarket/orange/contact-us.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--.layer-one-->
+			
+		<div class="layer-two">
+			<nav>
+				<ul>
+					<li class="nav-cars current-item"><a href="http://clapat.ro/themes/automarket/orange/car-list.html">Cars</a></li>
+					<li class="nav-bike"><a href="./add-vehicle_files/add-vehicle.html">Bikes</a></li>
+					<li class="nav-truck"><a href="./add-vehicle_files/add-vehicle.html">Trucks</a></li>
+					<li class="nav-parts"><a href="./add-vehicle_files/add-vehicle.html">Parts</a></li>
+				</ul>
+			</nav>
+				
+			<form id="header-search" action="http://clapat.ro/themes/automarket/orange/car-list.html" method="post">
+				<input type="text" name="quick_search" onfocus="if(this.value == &#39;Quick Search, Ex: Mercedes-Benz E220&#39;) { this.value = &#39;&#39;; }" onblur="if(this.value == &#39;&#39;) { this.value = &#39;Quick Search, Ex: Mercedes-Benz E220&#39;; }" value="Quick Search, Ex: Mercedes-Benz E220" class="quick-search">
+				<div class="selector" id="uniform-undefined"><span>Cars</span><select name="type-option" style="opacity: 0;">
+					<option value="cars" selected="selected">Cars</option>
+					<option value="bikes">Bikes</option>
+					<option value="trucks">Trucks</option>
+					<option value="Parts">Parts</option>
+				</select></div>
+				<div class="search-submit">
+					<input type="submit" value="Search">
+				</div>
+			</form>
+		</div><!--.layer-two-->
+	</div>
+		
+</header>
+	
+<div id="page-content">
+
+	<section id="car-pagination">
+		<div class="content-holder">
+			<div class="page-main-heading extra-space">
+				<div class="heading-location">
+					<h2><span class="bold">Sell your vehicle</span></h2>
+					<p class="page-location">
+						<a href="http://clapat.ro/themes/automarket/orange/index.html">Home </a>
+						<span class="greater-than">&gt;&gt;</span>
+						<a href="./add-vehicle_files/add-vehicle.html">Add an offer</a>
+					</p>
+				</div>
+			</div>
+			
+			<nav class="default-tabs split-tabs">
+				<ul>
+					<li class="current-item"><a href="./add-vehicle_files/add-vehicle.html"><span>1. New offer</span></a></li>
+					<li><a href="./add-vehicle_files/add-vehicle.html"><span>2. Preview</span></a></li>
+					<li><a href="./add-vehicle_files/add-vehicle.html"><span>3. Submit</span></a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</section><!--#car-pagination -->
+		
+	<section id="sell-your-vehicle">
+		<div class="content-holder">
+			<div class="full-width light-grey-corner-box box-text-default">
+				<h3>Sell ​​your car on <strong>AutoMarket </strong>and benefit from more than 1 million potential buyers every month!</h3>
+				<p>Required fields are marked with * </p>
+				<p>Please post offers only on the car (parts are a special category).</p>
+				<p>If you are a dealer, please visit the dealers section</p>
+				<p>If you have difficulties in posting an offer on the website, please call 0742 016 570</p>
+			</div>
+			
+			<div class="full-width sell-form &lt;!--options-form--&gt;">
+				<form>
+					<fieldset id="vehicle-data">
+						<legend><span class="bold">Vehicle</span> data</legend>
+						<ul class="field-content">
+							<li class="select-four">
+								<div>
+									<label for="select-manufacturer">Manufacturer: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-manufacturer"><span>Select</span><select id="select-manufacturer" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-model">Model: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-model"><span>Select</span><select id="select-model" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-fabrication">Fabrication: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-fabrication"><span>Select</span><select id="select-fabrication" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-body-type">Body Type: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-body-type"><span>Select</span><select id="select-body-type" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+							</li>
+							
+							<li class="select-four">
+								<div>
+									<label for="select-fuel-type">Fuel Type: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-fuel-type"><span>Select</span><select id="select-fuel-type" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-transmission">Transmission: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-transmission"><span>Select</span><select id="select-transmission" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-doors">Doors: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-doors"><span>Select</span><select id="select-doors" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-cilindrics">Cilindrics (in cm³): <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-cilindrics"><span>Select</span><select id="select-cilindrics" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+							</li><!-- line #2 -->
+							
+							<li class="select-four">
+								<div>
+									<label for="select-hp-kw">Hp / Kw: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-hp-kw"><span>Select</span><select id="select-hp-kw" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div class="two-fourth">
+									<label for="input-chassis">VIN / chassis number: <span class="mandatory">*</span></label>
+									<input type="text" name="chassis_number" id="input-chassis" class="default-input">
+								</div>
+								<div>
+									<label for="select-color">Color: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-color"><span>Select</span><select id="select-color" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+							</li><!-- line #3 -->
+						</ul>
+					</fieldset>
+					
+					<fieldset id="vehicle-equipment" class="checkbox-selection">
+						<legend><span class="bold">Vehicle</span> equipment</legend>
+						<ul class="field-content">
+							<li><div class="checker" id="uniform-check-abs"><span><input type="checkbox" value="checkbox_abs" id="check-abs" style="opacity: 0;"></span></div><label for="check-abs">ABS</label></li>
+							<li><div class="checker" id="uniform-check-eds"><span><input type="checkbox" value="checkbox_eds" id="check-eds" style="opacity: 0;"></span></div><label for="check-eds">EDS</label></li>
+							<li><div class="checker" id="uniform-check-esp"><span><input type="checkbox" value="checkbox_esp" id="check-esp" style="opacity: 0;"></span></div><label for="check-esp">ESP</label></li>
+							<li><div class="checker" id="uniform-check-air-conditioning"><span><input type="checkbox" value="checkbox_air_conditioning" id="check-air-conditioning" style="opacity: 0;"></span></div><label for="check-air-conditioning">Air conditioning</label></li>
+							<li><div class="checker" id="uniform-check-airbag"><span><input type="checkbox" value="checkbox_airbag" id="check-airbag" style="opacity: 0;"></span></div><label for="check-airbag">Air conditioning</label></li>
+							<li><div class="checker" id="uniform-check-alarm"><span><input type="checkbox" value="checkbox_alarm" id="check-alarm" style="opacity: 0;"></span></div><label for="check-alarm">Air conditioning</label></li>
+							<li><div class="checker" id="uniform-check-panoramic-roof"><span><input type="checkbox" value="checkbox_panoramic_roof" id="check-panoramic-roof" style="opacity: 0;"></span></div><label for="check-panoramic-roof">Panoramic roof</label></li>
+							<li><div class="checker" id="uniform-check-protection-framework"><span><input type="checkbox" value="checkbox_protection_framework" id="check-protection-framework" style="opacity: 0;"></span></div><label for="check-protection-framework">Protection framework</label></li>
+							<li><div class="checker" id="uniform-checkbox-tow"><span><input type="checkbox" value="checkbox_tow" id="checkbox-tow" style="opacity: 0;"></span></div><label for="checkbox-tow">Tow</label></li>
+							<li><div class="checker" id="uniform-checkbox-traction-control"><span><input type="checkbox" value="checkbox_traction_control" id="checkbox-traction-control" style="opacity: 0;"></span></div><label for="checkbox-traction-control">Traction control</label></li>
+							<li><div class="checker" id="uniform-checkbox-board-computer"><span><input type="checkbox" value="checkbox_board_computer" id="checkbox-board-computer" style="opacity: 0;"></span></div><label for="checkbox-board-computer">Board computer</label></li>
+							<li><div class="checker" id="uniform-checkbox-steering-wheel"><span><input type="checkbox" value="checkbox_steering_wheel" id="checkbox-steering-wheel" style="opacity: 0;"></span></div><label for="checkbox-steering-wheel">Steering wheel controls</label></li>
+						</ul>
+					
+					</fieldset>
+					
+					<fieldset id="vehicle-description">
+						<legend><span class="bold">Vehicle</span> description</legend>
+						<div class="field-content">
+							<label for="vehicle-description-field">Some text:</label>
+							<textarea id="vehicle-description-field" name="description" class="description"></textarea>
+						</div>
+					</fieldset>
+					
+					<fieldset id="vehicle-registration">
+						<legend><span class="bold">Vehicle</span> registration</legend>
+						<ul class="field-content">
+							<li class="select-four">
+								<div>
+									<label for="select-country-origin">Country of Origin: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-country-origin"><span>Select</span><select id="select-country-origin" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-country-registration">Country of registration: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-country-registration"><span>Select</span><select id="select-country-registration" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-registration-month">Date of first registration: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-registration-month"><span>Month</span><select id="select-registration-month" style="opacity: 0;">
+										<option selected="selected">Month</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-registration-year">&nbsp;</label>
+									<div class="selector" id="uniform-select-registration-year"><span>Year</span><select id="select-registration-year" style="opacity: 0;">
+										<option selected="selected">Year</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset id="vehicle-condition">
+						<legend><span class="bold">Vehicle</span> condition</legend>
+						<ul class="field-content">
+							<li class="select-four">
+								<div>
+									<label for="select-technical-condition">Technical condition: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-technical-condition"><span>Select</span><select id="select-technical-condition" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="input-kilometers">Kilometers: <span class="mandatory">*</span></label>
+									<input type="text" name="chassis_number" id="input-kilometers" class="default-input">
+								</div>
+								<div>
+									<label for="select-euro-type">Euro type:</label>
+									<div class="selector" id="uniform-select-euro-type"><span>Month</span><select id="select-euro-type" style="opacity: 0;">
+										<option selected="selected">Month</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="input-emissions">CO2 emissions:</label>
+									<input type="text" name="chassis_number" id="input-emissions" class="default-input">
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset id="vehicle-price">
+						<legend><span class="bold">Vehicle</span> price</legend>
+						<ul class="field-content">
+							<li class="select-four">
+								<div>
+									<label for="input-price">Price: <span class="mandatory">*</span></label>
+									<input type="text" name="chassis_number" id="input-price" class="default-input">
+								</div>
+								<div>
+									<label for="select-currency">Currency: <span class="mandatory">*</span></label>
+									<div class="selector" id="uniform-select-currency"><span>Euro</span><select id="select-currency" style="opacity: 0;">
+										<option selected="selected">Euro</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div class="checkbox-custom">
+									<div><div class="checker" id="uniform-check-price-negotiable"><span><input type="checkbox" value="checkbox_abs" id="check-price-negotiable" style="opacity: 0;"></span></div></div>
+									<label for="check-price-negotiable">&nbsp; Price Negotiable</label>
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset id="vehicle-photos">
+						<legend><span class="bold">Vehicle</span> photos</legend>
+						<ul class="field-content">
+							<li class="select-six">
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>
+								<div class="upload-file-container">
+									<span style="left: 646px; top: 1744px;">
+										<input type="file" name="files[]">
+									</span>
+								</div>								
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset id="seller-details">
+						<legend><span class="bold">Seller</span> details</legend>
+						<ul class="field-content">
+							<li class="select-four">
+								<div>
+									<label for="input-name">Name: <span class="mandatory">*</span></label>
+									<input type="text" name="name" id="input-name" class="default-input">
+								</div>
+								<div>
+									<label for="input-phone-1">Phone: <span class="mandatory">*</span></label>
+									<input type="text" name="phone_1" id="input-phone-1" class="default-input">
+								</div>
+								<div>
+									<label for="input-phone-2">Phone 2: <span class="mandatory">*</span></label>
+									<input type="text" name="phone_2" id="input-phone-2" class="default-input">
+								</div>
+								<div>
+									<label for="input-city">City: <span class="mandatory">*</span></label>
+									<input type="text" name="city" id="input-city" class="default-input">
+								</div>
+							</li>
+							<li class="select-four">
+								<div>
+									<label for="select-country">Country:</label>
+									<div class="selector" id="uniform-select-country"><span>Select</span><select id="select-country" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="select-state">State:</label>
+									<div class="selector" id="uniform-select-state"><span>Select</span><select id="select-state" style="opacity: 0;">
+										<option selected="selected">Select</option>
+										<option value="option1">Option 1</option>
+										<option value="option1">Option 2</option>
+										<option value="option1">Option 3</option>
+									</select></div>
+								</div>
+								<div>
+									<label for="input-email">E-mail: <span class="mandatory">*</span></label>
+									<input type="email" name="email" id="input-email" class="default-input">
+								</div>
+								<div>
+									<label for="input-password">Password: <span class="mandatory">*</span></label>
+									<input type="password" name="password" id="input-password" class="default-input">
+								</div>
+							</li>
+						</ul>
+					</fieldset>
+					
+					<fieldset id="vehicle-submit" class="checkbox-selection">
+						<div>
+							<div class="agree-checkbox">
+								<div class="checker" id="uniform-check-agreed"><span><input type="checkbox" value="agreed" id="check-agreed" style="opacity: 0;"></span></div><label for="check-agreed">I agree to the Terms and Conditions. </label>
+							</div>
+							<div class="submit-vehicle default-submit">
+								<input type="submit" value="submit">
+							</div>
+						</div>
+							
+					</fieldset>
+					
+				</form>				
+			</div>
+			
+		</div>
+	</section>
+	
+</div><!--#page-content-->
+	
+<footer>
+		<div class="layer-one">
+			<div class="content-holder">
+				<nav>
+					<ul>
+						<li><a href="./add-vehicle_files/add-vehicle.html"><span class="bold">About</span> us</a>
+							<ul>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Contact</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Our Partners</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Advertising Online</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Site Map</a></li>
+							</ul>
+						</li>
+						<li><a href="./add-vehicle_files/add-vehicle.html"><span class="bold">Need</span> Help?</a>
+							<ul>
+								<li><a href="./add-vehicle_files/add-vehicle.html">How do I add an offer?</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">How do I find a vehicle</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Price list</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Office for car dealers</a></li>
+							</ul>
+						</li>
+						<li><a href="./add-vehicle_files/add-vehicle.html"><span class="bold">User</span> area</a>
+							<ul>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Add an offer</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Register dealder</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">Login Dealer</a></li>
+								<li><a href="./add-vehicle_files/add-vehicle.html">News</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+					
+				<div class="find-us-here col-amount">
+					<h3><span class="bold">Find</span> us here</h3>
+					<ul class="social-list">
+						<li class="social-facebook"><a href="./add-vehicle_files/add-vehicle.html">Facebook</a></li>
+						<li class="social-twitter"><a href="./add-vehicle_files/add-vehicle.html">Twitter</a></li>
+						<li class="social-google"><a href="./add-vehicle_files/add-vehicle.html">Google</a></li>
+					</ul>
+					<p class="note">Become our fan, and we will love you forever</p>		
+				</div>
+			</div>
+		</div><!--.layer-one-->
+			
+		<div class="layer-two">
+			<div class="content-holder">
+				<p class="copyright">© 2012 Automarket. All Rights Reserved</p>
+				<p class="webdesign-author">Webdesign by <a href="./add-vehicle_files/add-vehicle.html">ClaPat Studio</a>
+			</p></div>
+		</div><!--.layer-two-->
+</footer>
+
+
+
+</body></html>
