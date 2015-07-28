@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', '\App\Http\Controllers\PagesController@index');
+Route::get('vehicles', '\App\Http\Controllers\VehiclesController@index');
+Route::get('vehicles/{id}', '\App\Http\Controllers\VehiclesController@show');
